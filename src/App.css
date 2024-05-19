@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #FFF4DF;
+  /* --secondary-color: rgb(155, 17, 155);
+  --text-color: rgb(0, 0, 0);
+  --shadow: rgba(95, 94, 94, 0.705);
+  --accent-color: #2f205e; */
+}
+
+.bg-main{
+  background-color: var(--primary-color);
+}
