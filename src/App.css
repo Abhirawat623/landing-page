@@ -1,11 +1,58 @@
 :root {
-  --primary-color: #FFF4DF;
-  /* --secondary-color: rgb(155, 17, 155);
-  --text-color: rgb(0, 0, 0);
-  --shadow: rgba(95, 94, 94, 0.705);
-  --accent-color: #2f205e; */
-}
+  --primary-color: rgb(255, 244, 223);
+  --text-color:  rgb(255, 244, 223);
+  --secondary-color: rgb(19, 14, 14);
+  }
 
 .bg-main{
   background-color: var(--primary-color);
+}
+
+.bg-sec{
+  background-color:var(--secondary-color);
+}
+
+.text-main{
+  color: var(--text-color);
+}
+
+.head-animate{
+  animation: myfirst 6s linear 2s infinite alternate;
+  position: relative;
+}
+
+
+.head-mob-animate{
+  animation: mysecond 6s linear 2s infinite alternate;
+  position: relative;
+}
+
+.rotate-head{
+
+  width: full;
+  animation: marquee 5s infinite; 
+}
+
+@keyframes marquee {
+  0% { transform: rotate(90deg),translate(-50, 0); }
+  100% { transform: rotate(90deg),translate(-50%, 0); }
+}
+
+@keyframes mysecond {
+  0%   {background-color:var(--primary-color) ; left:0px; top:0px;}
+  50%  {background-color:var(--primary-color); left:-80px; top:0;}
+  75%  {background-color:var(--primary-color); left:0px; top:0;}
+  100% {background-color:var(--primary-color); left:0px; top:0px;}
+}
+
+
+@keyframes myfirst {
+  0%   {background-color:var(--primary-color) ; left:0px; top:0px;}
+  50%  {background-color:var(--primary-color); left:-200px; top:0;}
+  75%  {background-color:var(--primary-color); left:0px; top:0;}
+  100% {background-color:var(--primary-color); left:0px; top:0px;}
+}
+
+.translate {
+  transform: translate(15%, 7%);
 }
